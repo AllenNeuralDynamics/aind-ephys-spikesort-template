@@ -217,17 +217,19 @@ if __name__ == "__main__":
         try:
             # TODO: update with the actual sorter function and parameters (if not integrated into spikeinterface)
             # SPIKEINTERFACE-integrated sorters
-            sorting = ss.run_sorter(
-                SORTER_NAME,
-                recording,
-                folder=spikesorted_raw_output_folder / recording_name,
-                verbose=False,
-                delete_output_folder=False,
-                remove_existing_folder=True,
-                **sorter_params,
-            )
+            # sorting = ss.run_sorter(
+            #     SORTER_NAME,
+            #     recording,
+            #     folder=spikesorted_raw_output_folder / recording_name,
+            #     verbose=False,
+            #     delete_output_folder=False,
+            #     remove_existing_folder=True,
+            #     **sorter_params,
+            # )
+
             # OR non-integrated sorters
-            sorting = my_sorter_package.run(recording, params)
+
+            # sorting = my_sorter_package.run(recording, params)
             
             
             logging.info(f"\tRaw sorting output: {sorting}")

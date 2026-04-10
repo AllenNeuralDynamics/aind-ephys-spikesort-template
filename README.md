@@ -62,7 +62,7 @@ All required edits are tagged `# TODO`:
 
 ### 3 — Provide spike sorter implementation (if not integrated into SpikeInterface)
 
-If the sorter is not integrated into SpikeInterface, you can provide a custom implementation.
+If the sorter is not integrated into SpikeInterface, you can provide a custom implementation [here](https://github.com/AllenNeuralDynamics/aind-ephys-spikesort-template/blob/main/code/run_capsule.py#L232)
 The only requirements are:
 1. the input is a [`spikeinterface.BaseRecording`](https://spikeinterface.readthedocs.io/en/stable/api.html#spikeinterface.core.BaseRecording)
 2. the output is a [`spikeinterface.BaseSorting`](https://spikeinterface.readthedocs.io/en/stable/api.html#spikeinterface.core.BaseSorting)
