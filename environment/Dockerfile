@@ -25,7 +25,7 @@ RUN apt-get update \
 # TODO: pin the exact package versions required by your sorter
 RUN pip install -U --no-cache-dir \
     aind-data-schema==2.4.0 \
-    aind-log-utils==0.2.3 \
+    log-schema==0.2.10.dev1 \
     spikeinterface[full]==0.103.0
 # TODO: add your sorter's pip package here, e.g.:
 #   my-sorter-package==x.y.z
