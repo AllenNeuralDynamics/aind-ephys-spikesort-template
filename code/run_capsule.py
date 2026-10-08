@@ -29,8 +29,8 @@ from aind_data_schema_models.process_names import ProcessName
 
 
 # TODO: update with the actual URL and version of the capsule
-URL = "https://github.com/YourOrganization/Your-SORTER_NAME-repository"
-VERSION = "1.0"
+URL = os.getenv("CODE_REPO", "https://github.com/YourOrganization/Your-SORTER_NAME-repository")
+VERSION = os.getenv("CODE_VERSION", "1.0")
 
 # TODO: replace with the actual sorter name
 SORTER_NAME = "SORTER_NAME"
